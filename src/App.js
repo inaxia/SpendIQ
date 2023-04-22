@@ -3,6 +3,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 
 import LinearProgress from '@mui/material/LinearProgress';
 
+import AuthContainer from "./components/auth/AuthContainer";
+
 import './App.scss';
 
 function App() {
@@ -17,14 +19,14 @@ function App() {
           <Routes>
             <Route path="/" element={"LANDING PAGE"}></Route>
 
-            <Route path="/auth/login" element={"AUTH"}></Route>
+            <Route path="/auth/login" element={<AuthContainer />}></Route>
 
             <Route path="/pages/" element={"PAGES CONTAINER"}>
               <Route path="dashboard" element={"DASHBOARD"} />
               <Route path="profile" element={"PROFILE"} />
             </Route>
 
-            <Route path="*" element={"AUTH"} />
+            <Route path="*" element={<AuthContainer />} />
           </Routes>
         </HashRouter>
       </div>
