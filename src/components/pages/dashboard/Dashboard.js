@@ -4,12 +4,12 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
 import DailyStats from "./DailyStats";
-// import StatDetails from "./StatDetails";
+import StatDetails from "./StatDetails";
 
 import '../../../styles/pages/Dashboard.scss';
 
 const Dashboard = () => { 
-    const [activeStat, setActiveStat] = useState({id: 1, name: "SBI", color: "#e23270"},);
+    const [activeStat, setActiveStat] = useState({id: 1, name: "SBI", color: "#e23270", value: "542.30", arrow: "down", link: "https://www.moneycontrol.com/mc/stock/chart?scId=SBI&exchangeId=SBIN&ex=NSE"});
 
     return (
         <Grid
@@ -26,7 +26,7 @@ const Dashboard = () => {
 
             <Grid item sx={{ width: "100%" }}>
                 <Typography variant="body" gutterBottom className="stat-title">{activeStat.name} Trends</Typography>
-                {/* <StatDetails activeStat={activeStat} /> */}
+                <StatDetails activeStat={activeStat} />
             </Grid>
         </Grid>
     );

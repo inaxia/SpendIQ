@@ -58,7 +58,7 @@
     }
 
     .weekly-stat-card {
-        margin: 25px 10px;
+        margin: 0px;
         overflow: visible;
         background-clip: border-box;
 
@@ -75,8 +75,7 @@
 
         .chart-box {
             padding: 20px 10px 15px;
-            margin-top: -50px;
-            height: 12.5rem;
+            height: 30rem;
             box-sizing: border-box;
             display: flex;
             align-items: center;
