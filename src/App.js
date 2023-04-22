@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+import { useSelector } from "react-redux";
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 import LinearProgress from '@mui/material/LinearProgress';
@@ -10,7 +11,7 @@ import Profile from "./components/pages/profile/Profile";
 import './App.scss';
 
 function App() {
-  const loading = false;
+  const loading = useSelector((store) => store.app.barLoading);
 
   return (
     <Suspense fallback={<div>Please wait while loading...</div>}>

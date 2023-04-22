@@ -12,7 +12,7 @@ import Divider from "@mui/material/Divider";
 
 import SidebarCurve from '../../assets/images/SidebarCurve.svg';
 import { sidebarList } from "../Constants"; 
-import Logo from '../../assets/images/Logo.png';
+import LogoWhite from '../../assets/images/LogoWhite.png';
 
 export const SidebarContents = (props) => {
     const { toggleSidebar } = props;
@@ -29,7 +29,7 @@ export const SidebarContents = (props) => {
         <Box className="sidebarContents" sx={{ padding: "10px 0" }}>
             <List>
                 <ListItem disablePadding>
-                    <img src={Logo} alt="logo" width="100px" style={{ margin: "auto" }} />
+                    <img src={LogoWhite} alt="logo" width="100px" style={{ margin: "auto" }} />
                 </ListItem>
                 
                 <Divider className="divider" sx={{ margin: "13px 0" }} />

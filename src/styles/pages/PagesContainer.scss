@@ -110,18 +110,18 @@
     }
 }
 
-@media screen and (max-width: 450px) {
-    .MuiToolbar-root {
-        flex-direction: column;
+// @media screen and (max-width: 450px) {
+//     .MuiToolbar-root {
+//         flex-direction: column;
 
-        .leftContent, .rightContent {
-            width: 100%;
-        }
+//         .leftContent, .rightContent {
+//             width: 100%;
+//         }
 
-        .rightContent {
-            text-align: right;
-            margin-bottom: 10px;
-        }
-    }
-}
+//         .rightContent {
+//             text-align: right;
+//             margin-bottom: 10px;
+//         }
+//     }
+// }
 

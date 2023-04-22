@@ -1,17 +1,14 @@
 import React from "react";
 import { useGoogleLogin } from '@react-oauth/google';
-import { useDispatch } from "react-redux";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 import { Button } from "@mui/material";
 
 import GoogleIcon from '../../assets/images/GoogleIcon.png';
-// import { Auth } from "../../redux/Actions";
 
 const GoogleAuth = () => {
 
-    const dispatch = useDispatch();
     const navigate = useNavigate();
 
     const googleLogin = useGoogleLogin({
@@ -24,7 +21,7 @@ const GoogleAuth = () => {
                 { headers: { Authorization: `Bearer ${tokenResponse.access_token}` } },
             );
 
-            // dispatch(Auth("user/login", userInfo.data));
+            localStorage.setItem("userInfo", JSON.stringify(userInfo.data));
             navigate('/pages/dashboard');
         },
         onError: errorResponse => console.log(errorResponse),
