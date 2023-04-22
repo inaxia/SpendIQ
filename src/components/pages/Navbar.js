@@ -75,7 +75,7 @@ const Navbar = (props) => {
                         </IconButton>
 
                         <HomeIcon className="homeIcon" />
-                        <Typography variant="body" sx={{ flexGrow: 1 }}>
+                        <Typography variant="h6" sx={{ flexGrow: 1 }}>
                             {headRoute !== null ? `/ ${headRoute}` : ''}
                         </Typography>
                     </div>
