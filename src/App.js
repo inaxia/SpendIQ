@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
+
+import LinearProgress from '@mui/material/LinearProgress';
+
+import './App.scss';
 
 function App() {
+  const loading = false;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<div>Please wait while loading...</div>}>
+      {loading ? <LinearProgress /> : ""}
+
+      <div className="app">
+        <HashRouter>
+          <Routes>
+            <Route path="/" element={"LANDING PAGE"}></Route>
+
+            <Route path="/auth/login" element={"AUTH"}></Route>
+
+            <Route path="/pages/" element={"PAGES CONTAINER"}>
+              <Route path="dashboard" element={"DASHBOARD"} />
+              <Route path="profile" element={"PROFILE"} />
+            </Route>
+
+            <Route path="*" element={"AUTH"} />
+          </Routes>
+        </HashRouter>
+      </div>
+    </Suspense>
   );
 }
 
