@@ -24,7 +24,6 @@ const GoogleAuth = () => {
                 { headers: { Authorization: `Bearer ${tokenResponse.access_token}` } },
             );
 
-            console.log(userInfo)
             // dispatch(Auth("user/login", userInfo.data));
             navigate('/pages/dashboard');
         },

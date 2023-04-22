@@ -4,6 +4,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import LinearProgress from '@mui/material/LinearProgress';
 
 import AuthContainer from "./components/auth/AuthContainer";
+import PagesContainer from "./components/pages/PagesContainer";
 
 import './App.scss';
 
@@ -21,8 +22,9 @@ function App() {
 
             <Route path="/auth/login" element={<AuthContainer />}></Route>
 
-            <Route path="/pages/" element={"PAGES CONTAINER"}>
+            <Route path="/pages/" element={<PagesContainer />}>
               <Route path="dashboard" element={"DASHBOARD"} />
+              <Route path="financeTracker" element={"FinanceTracker"} />
               <Route path="profile" element={"PROFILE"} />
             </Route>
 
