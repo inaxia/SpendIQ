@@ -5,6 +5,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 import AuthContainer from "./components/auth/AuthContainer";
 import PagesContainer from "./components/pages/PagesContainer";
+import Profile from "./components/pages/profile/Profile";
 
 import './App.scss';
 
@@ -25,7 +26,7 @@ function App() {
             <Route path="/pages/" element={<PagesContainer />}>
               <Route path="dashboard" element={"DASHBOARD"} />
               <Route path="financeTracker" element={"FinanceTracker"} />
-              <Route path="profile" element={"PROFILE"} />
+              <Route path="profile" element={<Profile/>} />
             </Route>
 
             <Route path="*" element={<AuthContainer />} />
