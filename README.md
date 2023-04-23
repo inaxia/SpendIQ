@@ -19,6 +19,12 @@ SpendIQ is a comprehensive application that enables you to track your income and
 ## Video
 Explore SpendIQ with this product tour video.
 
+
+
+https://user-images.githubusercontent.com/55057608/233828430-32557ffd-231a-47bd-ae3d-ed24ea886b58.mp4
+
+
+
 ## Business Model
 1. User Subscription
 2. Tie-up with Companies for Incentives
