@@ -22,7 +22,7 @@ function App() {
       <div className="app">
         <HashRouter>
           <Routes>
-            <Route path="/" element={"LANDING PAGE"}></Route>
+            <Route path="/" element={<AuthContainer />}></Route>
 
             <Route path="/auth/login" element={<AuthContainer />}></Route>
 

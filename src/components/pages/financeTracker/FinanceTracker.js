@@ -8,9 +8,6 @@ import Alert from '@mui/material/Alert';
 import OverViewComponent from "./OverViewComponent";
 import TransactionsComponent from "./TransactionsComponent";
 
-import PlutosLogo from "../../../assets/images/PlutosLogo.png";
-import Logo from "../../../assets/images/Logo.png";
-
 const Container = styled.div`
   background-color: white;
   color: #0d1d2c;
