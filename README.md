@@ -1,7 +1,7 @@
 # Spend IQ 
 
-<!-- ## Submission for The Great India Hackathon Jabalpur -->
-## Submission for The Great India Hackathon Jabalpur
+<!-- ## Submission for The Great India Hackathon - Jabalpur -->
+## Submission for The Great India Hackathon - Jabalpur
 
 <p align="center">
   <img src="./src/assets/images/LogoWhite.png" alt="Spend IQ Logo" width="50%" />
@@ -16,17 +16,16 @@ SpendIQ is a comprehensive application that enables you to track your income and
 3. Finance Tracker
 4. Overview Dashboard
 
+## Video
+Explore SpendIQ with this product tour video.
+
 ## Business Model
 1. User Subscription
 2. Tie-up with Companies for Incentives
 3. Commission from Professional Analysts
 
-<!-- ## Video
-Explore Spend IQ with this product tour video. -->
-
-
 ## Tech Stack and Softwares used
-- `Frontend:`  HTML5, CSS3, JavaScript, MaterialUI, React,Js,
+- `Frontend:` React.js, JavaScript, MaterialUI, SASS, HTML 
 - `Backend:` Node.js 
 - `IDE:` Visual Studio Code
 - `Version Control:` Git
@@ -71,4 +70,4 @@ Explore Spend IQ with this product tour video. -->
 A presentation for the project can be found here: [Spend IQ | Presentation](/./src/assets/PPT.pdf).
 
 <hr>
-Thank you for such a wonderful hackathon ❤️
+Thank you ReSkill for such a wonderful hackathon ❤️
